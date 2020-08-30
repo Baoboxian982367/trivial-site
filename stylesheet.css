@@ -2,9 +2,21 @@
 
 header>nav>ul>li {
     display: inline;
-    border: 2px solid blue;
+    border-radius: 1ex;
+    background: linear-gradient(to top);
     margin: 0.25em;
     padding: 4px;
+}    
+
+header>nav a {
+    text-decoration: none;
+    text-shadow: white 1px 1px 3px, white 0px 0px 6px;
+    color:  black;
+}
+
+header>nav a:hover {
+    color:  #ffa;
+    text-shadow: black 0px 0px 3px, black 2px 2px 4px;
 }    
 
 footer {
