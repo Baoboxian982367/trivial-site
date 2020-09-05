@@ -1,24 +1,29 @@
-@import url('https//fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
-header>nav>ul>li {
-    display: inline;
+*{ margin:0px; padding:0px;}
+.clr{ clear:both;}
+.clr1:after{ clear:both; content:''; display:block; height:0px;}
+header>nav>ul>li { 
     border-radius: 1ex;
-    background: linear-gradient(to top);
-    margin: 0.25em;
-    padding: 4px;
+    background: linear-gradient(to top); 
+    width:20%;
+    float:left;
+    text-align:center;
 }    
-
+header>nav{ width:1440px; margin:0 auto; }
 header>nav a {
     text-decoration: none;
     text-shadow: white 1px 1px 3px, white 0px 0px 6px;
     color:  black;
+    font-size:30px;
+    color:#fff;
+    line-height:2;
 }
 
 header>nav a:hover {
     color:  lightblue;
     text-shadow: black 0px 0px 3px, black 2px 2px 4px;
 }    
-
+header>nav li{}
 footer {
     text-align: center;
     font-size: 66%
@@ -41,7 +46,7 @@ font-family: Arial;
 #first {font-weight: bold;}
 
 li {
-    list-style-type: disc;
+    list-style-type: none;
 }    
 
 blockquote {
@@ -52,3 +57,181 @@ blockquote {
 .recommendation {
     background-color: lightpink;
 }    
+header{ background:#000;}
+main{ width:1440px; margin:0 auto;}
+main.index li{ width:30.3333%; float:left; margin:1.5% 1.5%; }
+main.index li img{ width:100%;}
+main.index h1{ text-align:center;     font-family: 'Satisfy', cursive; line-height:2; font-weight:bolder;}
+main.index p{ text-align:center; line-height:3; font-size:20px;}
+footer{ background:#000; color:#fff;  line-height:3;}
+
+
+.message_box { 
+    width: 100%;
+    overflow: hidden;
+    background-color: #f5f6f8;
+    padding-top: 16px;
+    padding-bottom: 12px;
+    margin:70px 0px;
+}
+.message_box li { 
+    width: 100%;
+    overflow: hidden;
+    margin-top: 40px;
+    margin-bottom:13px;
+}
+.message_box li label {
+    float: left;
+    text-align: right; 
+    font-size: 15.08px;
+    line-height: 32px;
+    width: 22%;
+    padding-right: 10px;
+    color: #222222;
+}
+.message_text {
+    float: left;
+    width: 65%;
+    height: 32px;
+    line-height: 22px;
+    border: 1px solid #dcdcdc;
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 0;
+}
+.textarea_message {
+    float: left;
+    width: 65%;
+    height: 128px;
+    line-height: 22px;
+    border: 1px solid #dcdcdc;
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 0;
+}
+.tjly_button {
+    display: inline-block;
+    width: 130px;
+    height: 26px;
+    overflow: hidden;
+    border: none;
+    text-align: center;
+    line-height: 26px;
+    background-color: #abcd03;
+    color: #ffffff;
+    font-size: 15.08px;
+    margin-top: 10px;
+}
+main.contact h1{ text-align:center;     font-family: 'Satisfy', cursive; line-height:2; font-weight:bolder;}
+main.about h1{ text-align:center;     font-family: 'Satisfy', cursive; line-height:2; font-weight:bolder;}
+main.designer h1{ text-align:center;     font-family: 'Satisfy', cursive; line-height:2; font-weight:bolder;}
+
+.nymain_left {
+    float: left;
+    width: 55%;
+    overflow: hidden;
+    color: #666666;
+    font-size: 14px;
+    line-height: 2.2em;
+    margin-top: 5px;
+}
+.nymain_right {
+    float: right;
+    width: 37%;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+
+main.about .message_box {
+    width: 100%;
+    overflow: hidden;
+    background-color: #f5f6f8;
+    padding-top: 16px;
+    padding-bottom: 12px;
+    margin: 10px 0px;
+}
+main.about .message_box li {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 13px;
+    margin-bottom: 0px;
+}
+main.about .nymain_left p{ font-family: 'Clicker Script', cursive; font-size:16px; line-height:2;}
+main.about p img{ width:350px; margin-bottom:30px;}
+
+
+
+main.designer .message_box {
+    width: 100%;
+    overflow: hidden;
+    background-color: #f5f6f8;
+    padding-top: 16px;
+    padding-bottom: 12px;
+    margin: 10px 0px;
+}
+main.designer .message_box li {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 13px;
+    margin-bottom: 0px;
+}
+main.designer .nymain_left p{ font-family: 'Clicker Script', cursive; font-size:16px; line-height:2;}
+main.designer p img{ width:300px; margin-bottom:30px;}
+
+@media (max-width: 1440px)
+{
+    header>nav { width: 100%;  }
+    main{ width:100%;  }
+    main.index li {
+    width: 47%;
+    float: left;
+    margin: 1.5% 1.5%;
+}
+
+
+.message_box {
+    width: 90%; 
+    margin: 20px 5%;
+}
+
+main.about .message_box {
+    width: 90%; 
+    margin: 10px 5%;
+}
+main.designer .message_box {
+    width: 90%; 
+    margin: 10px 5%;
+}
+}
+@media (max-width: 992px)
+{
+    header>nav a { 
+    font-size: 25px; 
+}
+    main.index h1 
+    {
+        font-size: 25px;
+}
+    .nymain_left {
+    width: 100%;
+}
+    .nymain_right {
+    width: 100%;
+}
+main.index li {
+    width: 96%;
+    float: none;
+    margin: 1.5% 1.5%;
+}
+    
+    }
+    
+    @media (max-width: 600px)
+{ header>nav a { 
+    font-size: 13px; 
+}
+main.about {
+    width: 90%;
+}
+}
