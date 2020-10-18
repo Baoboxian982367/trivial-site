@@ -123,17 +123,28 @@ footer{ background:#000; color:#fff;  line-height:3;}
     margin-top: 10px;
 }
 main.contact h1{ text-align:center;     font-family: 'Satisfy', cursive; line-height:2; font-weight:bolder;}
-main.about h1{ text-align:center;     font-family: 'Satisfy', cursive; line-height:2; font-weight:bolder;}
-main.designer h1{ text-align:center;     font-family: 'Satisfy', cursive; line-height:2; font-weight:bolder;}
-
-.nymain_left {
-    float: left;
+main.about h1{ text-align:center;     font-family: 'Satisfy', cursive; line-height:2; font-weight:bolder;} 
+main.about p{ text-indent:2em;} 
+main.about p.img{ text-indent:0; text-align:center;}
+main.Inspiration h1{ text-align:center;     font-family: 'Satisfy', cursive; line-height:2; font-weight:bolder;}
+main.Inspiration p{ font-family: 'Clicker Script', cursive;
+    font-size: 16px;
+    line-height: 2;
+    color: #666666;
+    text-indent:2em;}
+main.Inspiration ul{ overflow:hidden;}
+main.Inspiration ul li{ float:left; width:47%;   
+    margin: 1.5% 1.5%;}
+main.Inspiration ul li img{ width:100%;}
+.nymain_left { 
     width: 55%;
     overflow: hidden;
     color: #666666;
     font-size: 14px;
     line-height: 2.2em;
+    margin:0 auto;
     margin-top: 5px;
+    margin-bottom:50px;
 }
 .nymain_right {
     float: right;
@@ -162,7 +173,7 @@ main.about p img{ width:350px; margin-bottom:30px;}
 
 
 
-main.designer .message_box {
+main.Inspiration .message_box {
     width: 100%;
     overflow: hidden;
     background-color: #f5f6f8;
@@ -170,14 +181,14 @@ main.designer .message_box {
     padding-bottom: 12px;
     margin: 10px 0px;
 }
-main.designer .message_box li {
+main.Inspiration .message_box li {
     width: 100%;
     overflow: hidden;
     margin-top: 13px;
     margin-bottom: 0px;
 }
-main.designer .nymain_left p{ font-family: 'Clicker Script', cursive; font-size:16px; line-height:2;}
-main.designer p img{ width:300px; margin-bottom:30px;}
+main.Inspiration .nymain_left p{ font-family: 'Clicker Script', cursive; font-size:16px; line-height:2;}
+main.Inspiration p img{ width:300px; margin-bottom:30px;}
 
 @media (max-width: 1440px)
 {
@@ -199,7 +210,7 @@ main.about .message_box {
     width: 90%; 
     margin: 10px 5%;
 }
-main.designer .message_box {
+main.Inspiration .message_box {
     width: 90%; 
     margin: 10px 5%;
 }
@@ -234,4 +245,16 @@ main.index li {
 main.about {
     width: 90%;
 }
+main.Inspiration {
+    width: 90%;
+}
+}
+
+
+@media (max-width: 360px)
+{ 
+    main.about p img {
+        width: 100%;
+        margin-bottom: 30px;
+    } 
 }
